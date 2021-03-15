@@ -10,7 +10,9 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "log": "^6.0.0",
+        "log-node": "^7.0.0"
     },
     "repository": {
         "type": "git",

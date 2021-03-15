@@ -1,5 +1,5 @@
-// const fs = require('fs');
-// const path = require('path');
+const fs = require('fs');
+const path = require('path');
 
 function logDebug(req, res) {
     try {
@@ -31,17 +31,12 @@ function logError(req, res) {
     res.status(200).send({});
 }
 
-function logDebug(req, res) {
-    let message = req.params.message;
-    writeLog("DEBUG", message);
-}
-
 function writeLog(level, message) {
     let logMessage = formatDate(new Date()) + " | " + level + " | " + message;
     console.log(logMessage);
 }
 
-function formatDate(date) {
+function formatDate(d) {
     return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2) + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
 }
 
