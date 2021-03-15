@@ -1,0 +1,15 @@
+{
+  "name": "als12171-logger",
+  "description": "logging api",
+  "repository": "https://github.com/als12171/logging-api",
+  "keywords": [
+      "node",
+      "heroku",
+      "logging",
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
