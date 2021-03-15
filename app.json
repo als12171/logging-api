@@ -5,7 +5,7 @@
   "keywords": [
       "node",
       "heroku",
-      "logging",
+      "logging"
   ],
   "buildpacks": [
     {
