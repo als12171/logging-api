@@ -18,7 +18,7 @@ function logInfo(req, res) {
     } catch (ex) {
         //do nothing
     }
-    res.status(200).send({});
+    res.status(200).send();
 }
 
 function logError(req, res) {
@@ -28,7 +28,7 @@ function logError(req, res) {
     } catch (ex) {
         //do nothing
     }
-    res.status(200).send({});
+    res.status(200);
 }
 
 function writeLog(level, message) {
