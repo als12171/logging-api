@@ -14,5 +14,5 @@ require('./api/logger.js')(app);
 
 // Start the application!
 app.listen(app.get('port'), function () {
-    log.info('Node app is running on port', app.get('port'));
+    console.log('Node app is running on port ' + app.get('port'));
 });
