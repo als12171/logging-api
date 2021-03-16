@@ -32,7 +32,7 @@ function logError(req, res) {
 }
 
 function writeLog(level, message) {
-    let logMessage = formatDate(new Date()) + " | " + level + " | " + message;
+    let logMessage = formatDate(new Date()) + " | " + level + " | " + decodeURI(message);
     console.log(logMessage);
 }
 
